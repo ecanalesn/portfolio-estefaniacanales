@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Menu encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Estefanía</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/estefania.png" alt="">
+            </div>
+            <h1> ESTEFANÍA CANALES</h1>
+            <h2>Desarrollador Junior 🚀 <br> HTML | CSS | Javascript | Java | PHP</h2>
+            <div class="redes">
+                <a href="https://github.com/ecanalesn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ecanalesn/"><i class="fa-brands fa-linkedin-in"></i></a>            
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola! soy Estefanía Canales.</span>&nbsp;Desarrollador Junior en Formación, con especial interés
+                en Java. Mi objetivo es seguir creciendo para aplicar mis conocimientos en proyectos desafiantes 🚀</p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <span class="titulo-col">Fecha de nacimiento</span>
+                            07-12-1991
+                        </li>
+                        <li>
+                            <span class="titulo-col">Teléfono</span>
+                            616 47 15 34
+                        </li>
+                        <li>
+                            <span class="titulo-col">Correo electrónico</span>
+                            estefania.canalesn@gmail.com
+                        </li>
+                        <li>
+                            <span class="titulo-col">Dirección</span>
+                            Córdoba, España
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-dice"></i>
+                            <span>JUEGOS DE MESA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-person-hiking"></i>
+                            <span>SENDERISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-suitcase"></i>
+                            <span>VIAJES</span>
+                        </div>                     
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
+                        </div>                        
+                        <div class="interes">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <span>COCINA</span>
+                        </div>                        
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>                    
+                <a href="https://drive.google.com/file/d/159-D0rbEekCkm1w2ASVjQHNNF23OVjvv/view?usp=drive_link/" target="_blank">Descargar CV
+                    <i class="fa-solid fa-download"></i>                                        
+                    <span class="overlay"></span>
+                </a>            
+    </section>
+
+    <!-- Seccion portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <a href="https://calculadora-estefania.netlify.app/" target="_blank">
+                    <div class="proyecto">
+                        <img src="./img/img01.png" alt="">
+                        <div class="overlay">
+                            <h3>Calculadora</h3>
+                            <p>en Javascript</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://juego-musimemory.netlify.app/" target="_blank">
+                    <div class="proyecto">
+                        <img src="./img/img02.png" alt="">
+                        <div class="overlay">
+                            <h3>Juego de memoria</h3>
+                            <p>Musimemory</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://juego-pasapalabra.netlify.app/" target="_blank">
+                    <div class="proyecto">
+                        <img src="./img/img03.png" alt="">
+                        <div class="overlay">
+                            <h3>Juego</h3>
+                            <p>Pasapalabra</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://tienda-footlily.netlify.app/" target="_blank">
+                    <div class="proyecto">
+                        <img src="./img/img04.png" alt="">
+                        <div class="overlay">
+                            <h3>Tienda de calzado</h3>
+                            <p>FootLily</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://landing-roomio-n.netlify.app/" target="_blank">
+                    <div class="proyecto">
+                        <img src="./img/img05.png" alt="">
+                        <div class="overlay">
+                            <h3>Landing page</h3>
+                            <p>Roomio</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="proyecto">
+                    <img src="./img/img06.png" alt="">
+                    <div class="overlay">
+                        <h3>Plataforma de Aprendizaje</h3>
+                        <p>En proceso...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Habilidades -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades tecnicas -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="htmlcss">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="java">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="csharp">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="php">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades profesionales -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="comunicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mejora de procesos</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="mejora">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolutiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="resolutiva">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="proactividad">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="trabajo">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación académica</h3>
+                    <div class="item izq">
+                        <h4>CFGS Desarrollo de Aplicaciones Web</h4>
+                        <span class="casa">Ilerna</span>
+                        <span class="fecha">2023 - Actual</span>
+                        <p>He adquirido las bases de programación, conociendo los lenguajes Java y C# así como a gestionar bases de datos con MySQL. 
+                            También he aprendido HTML, CSS y JavaScript para crear interfaces dinámicas y el lado del servidor con PHP, 
+                            lo que me permite desarrollar aplicaciones web completas y funcionales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Máster en Profesorado</h4>
+                        <span class="casa">Universidad de Córdoba</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Me ha brindado conocimientos pedagógicos, aprendiendo a comunicar conceptos técnicos de manera clara y efectiva. 
+                            De esta manera, me permite compartir mi experiencia y enseñar a otros, mejorando mi capacidad para liderar proyectos y formar 
+                            a futuros profesionales en diversos campos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Flamencología</h4>
+                        <span class="casa">Conservatorio Superior "Rafael Orozco"</span>
+                        <span class="fecha">2009 - 2015</span>
+                        <p>La formación en Música me aportó constancia en la búsqueda de la excelencia y habilidades clave para desarrollar proyectos innovadores y funcionales. 
+                            Esto ha fortalecido mi disciplina, creatividad y atención al detalle. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Coordinadora de Proyectos</h4>
+                        <span class="casa">Consultoría Rural</span>
+                        <span class="fecha">2024 - Actual</span>
+                        <p>Desarrollo las labores de: Gestionar la relación entre los equipos técnicos y las administraciones públicas,
+                            coordinar la implementación de iniciativas que promuevan la sostenibilidad y la economía circular
+                            y supervisar la elaboración y presentación de solicitudes de subvenciones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Coordinadora de Formación</h4>
+                        <span class="casa">Structuralia</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Mis funciones eran: Desarrollar planes de formación mediante el diagnóstico de necesidades educativas y seguimiento del alumnado,
+                            gestionar la administración y configuración de la plataforma Moodle, elaborar guías didácticas y generar informes del rendimiento de los cursos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Gestor de Moodle - Tutor</h4>
+                        <span class="casa">Tu Aula Musical</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Realizaba las funciones de: Gestionar la plataforma Moodle, desarrollar pruebas automatizadas utilizando Selenium, elaborar documentación
+                            y exámenes con herramientas SCORM (eXeLearning) e impartir formación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                    <div class="col">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="text" name="name" placeholder="Nombre" />
+                            <input type="tel" pattern="[0-9]{9}" name="phone" placeholder="Número de teléfono">
+                            <input type="email" name="email" placeholder="Dirección de correo">
+                            <input type="text" name="subject" placeholder="Asunto">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <button type="submit">
+                                Enviar mensaje <i class="fa-regular fa-paper-plane"></i> 
+                                <span class="overlay"></span>
+                            </button>
+                        </form>    
+                    </div>
+                
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50378.57937324657!2d-4.825684773561472!3d37.89160495712012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf26f95e0aef%3A0x4df1d2e8108456c3!2zQ8OzcmRvYmE!5e0!3m2!1ses!2ses!4v1723049383936!5m2!1ses!2ses" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Córdoba, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contacto: 616 47 15 34
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo electrónico: estefania.canalesn@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/ecanalesn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ecanalesn/"><i class="fa-brands fa-linkedin-in"></i></a>    
+        </div>
+        <div class="copyright">
+            <p>© 2024 Portfolio Estefanía</p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
